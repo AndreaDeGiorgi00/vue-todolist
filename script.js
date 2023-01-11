@@ -15,8 +15,8 @@ tasks = [{
 const app = Vue.createApp({
     data(){
         return{
-            tasks , 
-            cuore : 1,
+            tasks ,
+            newText : ""
         }
     },
     methods:{
@@ -30,6 +30,18 @@ const app = Vue.createApp({
         },
         removeTask(i){
             this.tasks.splice(i,1)
+        },
+        addTask(){
+            //creo l'oggetto 
+            let newtask = {text: this.newText , done:false }
+            this.tasks.push(newtask)
+        },
+        done(x){
+            if(this.tasks[x].done == "true"){
+                this.tasks[x].done = "false"
+            }else{
+                this.tasks[x].done = "true"
+            }
         }
     }
 })

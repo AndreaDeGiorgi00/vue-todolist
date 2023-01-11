@@ -2,7 +2,6 @@
     width: 500px;
     margin: 20px auto;
     font-size: 25px;
-    font-family: 'Coming Soon', cursive;
 }
 
 .checked{
@@ -14,6 +13,7 @@ ul {
 
 
 li{
+    font-family: 'Coming Soon', cursive;
     border: 5px solid grey;
     padding: 5px 10px;
     border-radius: 15px;
@@ -21,8 +21,21 @@ li{
     display: flex;
     justify-content: space-between;
 }
-li i{
-    
+.delete{
     color: red;
+
+}
+
+i{
     cursor: pointer;
+}
+
+.done{
+    color: rgb(7, 241, 7);
+    margin-right: 10px;
+}
+
+.text-area{
+    margin-left: 32px;
+    width: 100%;
 }
