@@ -1,0 +1,28 @@
+.contenitore{
+    width: 500px;
+    margin: 20px auto;
+    font-size: 25px;
+    font-family: 'Coming Soon', cursive;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+ul {
+    list-style-type: none;
+}
+
+
+li{
+    border: 5px solid grey;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+li i{
+    
+    color: red;
+    cursor: pointer;
+}
